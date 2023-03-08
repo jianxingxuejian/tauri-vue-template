@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "tauri-apps.tauri-vscode",
+    "rust-lang.rust-analyzer",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "EditorConfig.EditorConfig",
+    "Vue.vscode-typescript-vue-plugin",
+    "antfu.unocss",
+    "antfu.iconify",
+    "antfu.goto-alias"
+  ]
+}
