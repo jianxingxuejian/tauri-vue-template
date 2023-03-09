@@ -1,16 +1,55 @@
-# Tauri + Vue 3 + TypeScript
+<h1 align="center">tauri-vue-template</h1>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+English | [简体中文](README_zh-CN.md)
 
-## Recommended IDE Setup
+This is a Tauri+Vue project template that I frequently use, built with [Vue3](https://github.com/vuejs/vue) + [Typescript](https://github.com/microsoft/TypeScript) + [Vite4](https://github.com/vitejs/vite) for the frontend.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## Features
 
-## Type Support For `.vue` Imports in TS
+- Atomic CSS framework [UnoCSS](https://github.com/unocss/unocss)，compatible with the syntax of [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) and [WindiCSS](https://github.com/windicss/windicss)
+- Use [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import)，[unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)，[unplugin-icons](https://github.com/antfu/unplugin-icons), for zero import, on-demand use of common components, Vue functions, VueRouter, Pinia, and hundreds of thousands of Iconify icons.
+- ESLint+Prettier for code style checking, lint-staged+ simple-git-hooks for hooks checking.
+- Perfect workflow, including style checking, unit testing, build testing for both frontend and backend and release.
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+## Prerequisites
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+- Install **Rust** environment, download from the [official website](https://www.rust-lang.org/learn/get-started).
+- Install **Node** environment, download from the [official website](https://nodejs.org).
+- Install [Pnpm](https://pnpm.io), as the frontend package management tool.
+- It is recommended to use the VSCode editor. The project has configured the plugins and some recommended settings for VSCode.
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+## Quick start
+
+```shell
+// Clone the repository
+git clone https://github.com/jianxingxuejian/tauri-vue-template
+// Install dependencies
+pnpm i
+// Tauri development mode
+pnpm tauri dev
+// Open VueDevTools
+pnpm devtools
+// Build, if you need a console in the packaged version, add the --debug parameter
+pnpm tauri build
+```
+
+## Compilation and release
+
+All pushes and PRs will trigger frontend/backend Lint checks, unit tests, and build tests based on the submitted files.
+
+Tauri is cross-platform, but compilation can only be done on the respective platform. When you push the version tag, the release workflow will be triggered to compile and package binary files for various platforms.
+
+Before releasing a new version, you need to modify the version number in tauri.conf.json, and then push the new version tag to Github to trigger the workflow.
+
+```shell
+git tag vX.Y.Z
+git push origin vX.Y.Z
+```
+
+## Contributions
+
+Contributes are welcome to help improve this project.
+
+## License
+
+This project is licensed under the [MIT](https://github.com/jianxingxuejian/tauri-vue-template/blob/main/LICENSE) license.
