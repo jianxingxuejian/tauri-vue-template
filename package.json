@@ -16,6 +16,7 @@
   "dependencies": {
     "@tauri-apps/api": "^1.2.0",
     "@unocss/reset": "^0.50.4",
+    "pinia": "^2.0.33",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },

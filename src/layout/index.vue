@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen w-screen flex-col">
-    <layout-header />
-    <layout-main class="grow" />
+    <layout-header class="h-5vh" />
+    <layout-main class="h-95vh" />
   </div>
 </template>
 
