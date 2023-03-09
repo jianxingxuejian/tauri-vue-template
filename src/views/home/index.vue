@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <div class="h-screen m0 flex-center flex-col bg-#f6f6f6">
+  <div class="m0 flex-center flex-col bg-#f6f6f6">
     <h1 class="text-8 font-700">Welcome to Tauri!</h1>
 
     <div class="flex-center">

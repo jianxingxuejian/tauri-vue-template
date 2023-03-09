@@ -29,5 +29,12 @@ declare global {
     }
 
     type Module = Record<string, { default: Config | undefined }>
+
+    interface Menu {
+      key: string
+      label: string
+      icon?: () => VNodeChild
+      children?: Menu[]
+    }
   }
 }

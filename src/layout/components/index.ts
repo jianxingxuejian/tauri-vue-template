@@ -1,3 +1,4 @@
+import LayoutHeader from './Header.vue'
 import LayoutMain from './Main.vue'
 
-export { LayoutMain }
+export { LayoutHeader, LayoutMain }

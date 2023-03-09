@@ -1,1 +1,9 @@
+@import './common.scss';
 
+html,
+body,
+#app {
+  /* scrollbar-gutter: stable; */
+  overflow-y: overlay;
+  overflow-x: hidden;
+}
