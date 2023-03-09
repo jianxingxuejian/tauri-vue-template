@@ -16,8 +16,9 @@ async function setupApp() {
   app.mount('#app')
 }
 
-await setupApp()
+setupApp()
 
+// run pnpm devtools
 if (process.env.NODE_ENV === 'development') {
   devtools.connect('http://localhost', 8098)
 }
