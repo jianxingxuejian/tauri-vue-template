@@ -1,3 +1,5 @@
+///<reference types="node" />
+import devtools from '@vue/devtools'
 import { createApp } from 'vue'
 import { setupRouter } from './router'
 import { setupStore } from './stores'
@@ -14,4 +16,8 @@ async function setupApp() {
   app.mount('#app')
 }
 
-setupApp()
+await setupApp()
+
+if (process.env.NODE_ENV === 'development') {
+  devtools.connect('http://localhost', 8098)
+}
