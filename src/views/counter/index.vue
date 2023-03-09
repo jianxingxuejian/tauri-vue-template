@@ -1,18 +1,14 @@
 <template>
   <div class="flex-center">
-    <span class="text-6">{{ counterStore.count }}</span>
-    <button
-      class="h-10 w-10 ml-8 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded"
+    <icon-ic:sharp-remove-circle-outline
+      class="text-12 text-gray-400 hover:text-gray-700 transition-colors duration-300 cursor-pointer"
       @click="counterStore.count--"
-    >
-      -
-    </button>
-    <button
-      class="h-10 w-10 ml-4 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded"
+    />
+    <span class="text-6 mx-4 select-none">{{ counterStore.count }}</span>
+    <icon-ic:sharp-add-circle-outline
+      class="text-12 text-gray-400 hover:text-gray-700 transition-colors duration-300 cursor-pointer"
       @click="counterStore.count++"
-    >
-      +
-    </button>
+    />
   </div>
 </template>
 

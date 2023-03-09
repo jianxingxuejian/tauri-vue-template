@@ -1,13 +1,14 @@
 <template>
-  <div class="px-4 flex-start gap-x-2">
+  <div class="flex-start gap-x-2 px-4">
     <div
       v-for="menu in menus"
       :key="menu.key"
-      class="cursor-pointer"
+      class="flex-center cursor-pointer text-gray-700 hover:text-blue-500 transition-colors duration-300 select-none"
+      :class="{ 'text-blue-500!': menu.key === activeKey }"
       @click="handleUpdateMenu(menu.key)"
     >
-      <span v-if="menu.key === activeKey" class="text-blue-500">🔵{{ menu.label }}</span>
-      <span v-else>{{ menu.label }}</span>
+      <component :is="menu.icon" class="w-5 h-5" />
+      <span class="ml-2">{{ menu.label }}</span>
     </div>
   </div>
 </template>

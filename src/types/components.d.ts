@@ -10,6 +10,8 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Greet: typeof import('./../components/Greet.vue')['default']
+    'IconIc:sharpAddCircleOutline': typeof import('~icons/ic/sharp-add-circle-outline')['default']
+    'IconIc:sharpRemoveCircleOutline': typeof import('~icons/ic/sharp-remove-circle-outline')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
