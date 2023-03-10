@@ -19,6 +19,7 @@ async function setupApp() {
 setupApp()
 
 // run pnpm devtools
+// if you don't run devtools, it will print error to console, please comment out it
 if (process.env.NODE_ENV === 'development') {
   devtools.connect('http://localhost', 8098)
 }
