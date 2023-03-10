@@ -5,17 +5,28 @@ on:
     branches: [main]
     paths:
       - 'src/**'
-      - 'build/**'
       - 'src-tauri/**'
       - 'pnpm-lock.yaml'
+      - 'build/**'
+      - .env*
+      - .npmrc
+      - index.html
+      - tsconfig.*
+      - uno.config.ts
+      - vite.config.ts
       - '.github/workflows/build.yml'
-  pull_request:
     branches: [main]
     paths:
       - 'src/**'
-      - 'build/**'
       - 'src-tauri/**'
       - 'pnpm-lock.yaml'
+      - 'build/**'
+      - .env*
+      - .npmrc
+      - index.html
+      - tsconfig.*
+      - uno.config.ts
+      - vite.config.ts
       - '.github/workflows/build.yml'
 
   workflow_dispatch:
