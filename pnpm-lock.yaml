@@ -5,8 +5,8 @@ dependencies:
     specifier: ^1.2.0
     version: 1.2.0
   '@unocss/reset':
-    specifier: ^0.50.4
-    version: 0.50.4
+    specifier: ^0.51.0
+    version: 0.51.0
   pinia:
     specifier: ^2.0.33
     version: 2.0.33(typescript@4.9.5)(vue@3.2.47)
@@ -936,13 +936,8 @@ packages:
       '@unocss/preset-mini': 0.51.0
     dev: true
 
-  /@unocss/reset@0.50.4:
-    resolution: {integrity: sha512-UHNDhClJMx3sG3oi68XkOcTeJ2hkI20O0eHowSoua10NClbnS9tiKxeo4ZLInouzvac3tb1TsjKEgTosHfkR/w==}
-    dev: false
-
   /@unocss/reset@0.51.0:
     resolution: {integrity: sha512-4JPcqWLvhce1LX+t2YAx8dkaFvizbP1Qy/VgpUI8ZmYLCeCifhmAA+N/MYmsg2VpLfkEUBPMhZfPqd7V60vEiw==}
-    dev: true
 
   /@unocss/scope@0.51.0:
     resolution: {integrity: sha512-Nl9H+HXehpdGvE5vSDJoZ9b22dOTsKFb29yhG9Qk8Cb/yYGSMViHT4mQEuvmIgpJJ6aC6mePPAvPPE+10mszqQ==}
