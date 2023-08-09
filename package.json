@@ -39,7 +39,7 @@
     "sass": "^1.58.3",
     "simple-git-hooks": "^2.8.1",
     "typescript": "^5.0.0",
-    "unocss": "^0.51.0",
+    "unocss": "^0.55.0",
     "unplugin-auto-import": "^0.15.1",
     "unplugin-icons": "^0.16.0",
     "unplugin-vue-components": "^0.24.1",
